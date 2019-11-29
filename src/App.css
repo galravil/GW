@@ -1,0 +1,135 @@
+body, html, #root {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+#labels {
+    position: absolute;  /* let us position ourself inside the container */
+    left: 0;             /* make our position the top left of the container */
+    top: 0;
+    /* color: white; */
+  }
+
+#labels > div {
+    position: absolute;  /* let us position them inside the container */
+    left: 0;             /* make their default position the top left of the container */
+    top: 0;
+    cursor: pointer;     /* change the cursor to a hand when over us */
+    user-select: none;   /* don't let the text get selected */
+    text-shadow:         /* create a black outline */
+        -1px -1px 0 #000,
+        0   -1px 0 #000,
+        1px -1px 0 #000,
+        1px  0   0 #000,
+        1px  1px 0 #000,
+        0    1px 0 #000,
+        -1px  1px 0 #000,
+        -1px  0   0 #000;
+    width: 100px;
+    text-align: center;
+    font-size: medium;
+}
+
+/* TODO: not working */
+/* #labels > div:hover {
+    color: red;
+} */
+
+.bg {
+    /* The image used */
+    background-image: url("./assets/img/reg.jpg");
+    
+    /* Full height */
+    height: 100%;
+    
+    /* opacity: 0.9; */
+    filter: brightness(90%);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input-field > label {
+    color: #fff;
+}
+
+input {
+    background-color: #3a473b8a;
+    color: #fff;
+    font-size: 18px;
+}
+
+.title {
+    color: #fff;
+    font-size: 50px;
+    padding-top: 5vh;
+    text-align: center;
+    /* height: 30px; */
+}
+
+.next {
+    color: #fff;
+    /* font-size: 50px; */
+    /* padding-top: 10vh; */
+    text-align: right;
+    padding-right: 50px;
+}
+
+.next > a{
+    color: #fff;
+}
+
+
+.welcome {
+    background-color: #000000;
+    height: 100%;
+    /* min-height: 80vh; */
+
+}
+
+.cybran {
+    background-image: url("./assets/img/aeon.jpg");
+    height: 100%;
+    width: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+}
+
+img {
+    width: fit-content;
+    /* height: auto; */
+}
+
+.uef {
+    background-image: url("./assets/img/uef.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+
+}
+
+.aeon {
+    background-image: url("./assets/img/aeon.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: contain;  */
+
+}
+
+.aeon:hover {
+    flex: 1 1 50%
+}
+
+.seraphim {
+    background-image: url("./assets/img/seraphim.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+}
